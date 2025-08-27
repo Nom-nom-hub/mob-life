@@ -1,36 +1,209 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mob-Life: Gang & Crime Mafia Game
 
-## Getting Started
+A multiplayer mafia-style game where players form gangs, control turf, and engage in strategic crime operations in a gritty urban setting.
 
-First, run the development server:
+## 🎮 Game Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Mob-Life is a real-time multiplayer game featuring:
+- **Gang Formation**: Players create or join gangs to control territories
+- **Turf Wars**: Strategic battles for neighborhood control
+- **Crime Operations**: Night-time actions including hits, protection, and theft
+- **Economy System**: Money, drugs, and resource management
+- **Political Intrigue**: Voting, alliances, and betrayals
+
+## 🏗️ Project Structure
+
+```
+mob-life/
+├── backend/           # Node.js/Express backend with Socket.IO
+│   ├── src/
+│   ├── package.json
+│   └── tsconfig.json
+├── frontend/          # Next.js React frontend
+│   ├── app/
+│   ├── components/
+│   ├── services/
+│   └── package.json
+├── shared/            # Shared TypeScript types and interfaces
+│   └── gameTypes.ts
+├── .gitignore
+└── FEATURE_MAP.md     # Team development guide
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Quick Start
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
+- Node.js 18+ and npm
+- Git
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Setup Instructions
 
-## Learn More
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Nom-nom-hub/mob-life.git
+   cd mob-life
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Set up backend**
+   ```bash
+   cd backend
+   npm install
+   cd ..
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Set up frontend**
+   ```bash
+   cd frontend
+   npm install
+   cd ..
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Start development servers**
 
-## Deploy on Vercel
+   **Terminal 1 - Backend:**
+   ```bash
+   cd backend
+   npx ts-node-dev src/index.ts
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   **Terminal 2 - Frontend:**
+   ```bash
+   cd frontend
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. **Open your browser**
+   - Frontend: http://localhost:3000
+   - Backend WebSocket: http://localhost:3001
+
+## 🎯 Game Features
+
+### Core Mechanics
+- **Multiplayer Lobby**: Create/join game rooms (6-12 players)
+- **Gang System**: Form alliances and rivalries
+- **Turf Control**: Strategic map-based territory management
+- **Day/Night Cycle**: Different mechanics for planning vs action phases
+- **Action System**: Night-time crime operations (attacks, protection, theft)
+- **Voting Mechanics**: Day-time political decisions and conflict resolution
+- **Chat System**: In-game communication with private gang channels
+- **Economy**: Resource management and progression systems
+
+### Player Roles
+- **Gang Leader**: Commands gang operations and strategy
+- **Enforcer**: Executes hits and protection duties
+- **Dealer**: Manages drug trade and resource distribution
+- **Civilian**: Independent operators with flexible allegiances
+
+## 👥 Team Development
+
+This project is designed for collaborative development with 6 team members. See [FEATURE_MAP.md](FEATURE_MAP.md) for:
+- Detailed feature breakdown
+- Branch naming conventions
+- Team assignments
+- Development workflow
+- Priority order for implementation
+
+### Branch Structure
+```
+main (stable releases)
+└── develop (integration branch)
+    ├── feature/game-lobby
+    ├── feature/player-roles
+    ├── feature/turf-system
+    ├── feature/day-night-cycle
+    ├── feature/action-system
+    ├── feature/voting-system
+    ├── feature/chat-system
+    ├── feature/game-logic
+    ├── feature/ui-components
+    └── feature/user-interface
+```
+
+## 🛠️ Technology Stack
+
+### Backend
+- **Runtime**: Node.js
+- **Framework**: Express.js
+- **Real-time**: Socket.IO
+- **Language**: TypeScript
+- **Development**: ts-node-dev (hot reload)
+
+### Frontend
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS (planned)
+- **State Management**: React hooks + Context (planned)
+
+### Shared
+- **Types**: TypeScript interfaces
+- **Validation**: Runtime type checking (planned)
+
+## 📁 Development Guidelines
+
+### Code Style
+- Use TypeScript for all new code
+- Follow ESLint configuration
+- Use meaningful commit messages
+- Write descriptive component/function names
+
+### Git Workflow
+1. Create feature branch from `develop`
+2. Work on assigned feature
+3. Commit regularly with clear messages
+4. Push branch and create pull request
+5. Merge to `develop` after review
+6. Repeat for next feature
+
+### File Organization
+- **Backend**: Place server logic in `backend/src/`
+- **Frontend**: Place components in `frontend/components/`
+- **Shared**: Place types in `shared/` directory
+- **Assets**: Place images/sounds in appropriate folders
+
+## 🎮 Gameplay Flow
+
+1. **Lobby Phase**: Players join/create rooms and form gangs
+2. **Setup Phase**: Roles assigned, initial turf distribution
+3. **Day Phase**: Planning, voting, political maneuvering
+4. **Night Phase**: Crime operations and actions
+5. **Resolution Phase**: Action outcomes revealed
+6. **Repeat**: Cycles continue until win conditions met
+
+### Win Conditions
+- **Turf Domination**: Control majority of map territories
+- **Gang Supremacy**: Largest gang by membership and resources
+- **Economic Victory**: Highest accumulated wealth
+
+## 🤝 Contributing
+
+1. Check [FEATURE_MAP.md](FEATURE_MAP.md) for your assigned features
+2. Follow the established branching workflow
+3. Ensure code passes linting
+4. Test your changes thoroughly
+5. Create pull request with clear description
+
+## 📝 Documentation
+
+- [Feature Map & Team Guide](FEATURE_MAP.md) - Complete development roadmap
+- [Backend API](backend/README.md) - Server-side documentation
+- [Frontend Guide](frontend/README.md) - Client-side information
+
+## 🚀 Deployment
+
+### Development
+- Backend runs on `http://localhost:3001`
+- Frontend runs on `http://localhost:3000`
+- Hot reload enabled for both
+
+### Production (Future)
+- Backend: Deploy to services like Railway, Render, or AWS
+- Frontend: Deploy to Vercel, Netlify, or AWS Amplify
+- Database: PostgreSQL with Prisma ORM (planned)
+
+## 📄 License
+
+This project is for educational and development purposes.
+
+---
+
+**Ready to build the ultimate mafia empire? Check the [FEATURE_MAP.md](FEATURE_MAP.md) and start coding!**

@@ -1,36 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mob-Life Frontend
 
-## Getting Started
+Frontend client for the Mob-Life multiplayer mafia game built with Next.js 14.
 
-First, run the development server:
+## 🎮 About
+
+This is the React frontend for Mob-Life, a real-time multiplayer game where players form gangs, control turf, and engage in strategic crime operations. The frontend handles:
+
+- Game lobby and room management
+- Real-time game state display
+- Player interactions and chat
+- Responsive UI for desktop and mobile
+- WebSocket connection to backend game server
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+ and npm
+- Backend server running (see root README.md)
+
+### Installation
+
+```bash
+cd frontend
+npm install
+```
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Backend Connection
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The frontend connects to the backend WebSocket server at `http://localhost:3001`. Make sure the backend is running before starting the frontend.
 
-## Learn More
+## 🏗️ Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+frontend/
+├── app/                 # Next.js app router pages
+│   ├── layout.tsx      # Root layout
+│   ├── page.tsx        # Home page
+│   └── globals.css     # Global styles
+├── components/         # React components
+├── services/           # API services and WebSocket handlers
+├── public/             # Static assets
+├── package.json
+├── next.config.ts
+├── tailwind.config.ts  # Tailwind CSS configuration
+├── postcss.config.mjs
+└── eslint.config.mjs
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Key Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Current Implementation
+- Next.js 14 with App Router
+- TypeScript for type safety
+- ESLint for code quality
+- Tailwind CSS for styling (planned)
+- WebSocket integration with backend
 
-## Deploy on Vercel
+### Planned Features
+- Game lobby interface
+- Real-time game board
+- Player chat system
+- Turf control map
+- Action selection UI
+- Voting mechanics
+- Responsive mobile design
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔧 Development Guidelines
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Code Style
+- Use TypeScript for all components
+- Follow the established ESLint rules
+- Use meaningful component and function names
+- Keep components modular and reusable
+
+### Component Structure
+- Place reusable components in `components/` directory
+- Use TypeScript interfaces for props
+- Follow Next.js 14 App Router conventions
+- Implement proper error boundaries
+
+### State Management
+- Use React hooks for local state
+- Context API for global game state (planned)
+- WebSocket events for real-time updates
+
+## 🎮 Game Integration
+
+### WebSocket Events
+The frontend connects to backend Socket.IO events:
+- `joinGame` - Join/create game rooms
+- `chatMessage` - Real-time chat
+- `gameState` - Game state updates (planned)
+- `playerAction` - Action submissions (planned)
+
+### Shared Types
+Import game types from the `shared/` directory:
+```typescript
+import { PlayerAction, GameState } from '../../shared/gameTypes';
+```
+
+## 🚀 Deployment
+
+### Development
+- Runs on `http://localhost:3000`
+- Hot reload enabled
+- Connects to backend at `http://localhost:3001`
+
+### Production (Future)
+- Deploy to Vercel or Netlify
+- Environment variables for backend URL
+- CDN optimization for assets
+
+## 📚 Resources
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Mob-Life Feature Map](../FEATURE_MAP.md)
+- [Root Project README](../README.md)
+
+## 🤝 Contributing
+
+See the main [FEATURE_MAP.md](../FEATURE_MAP.md) for frontend-specific assignments and development workflow.
