@@ -1,6 +1,6 @@
 # Mob-Life: Mafia Strategy Game — Development Roadmap
 
-[![Development Phases](https://img.shields.io/badge/Phases-9_Complete-blue)](ROADMAP.md)
+[![Development Phases](https://img.shields.io/badge/Phases-0_Complete-blue)](ROADMAP.md)
 [![Current Phase](https://img.shields.io/badge/Current_Phase-1-orange)](ROADMAP.md)
 [![Priority Focus](https://img.shields.io/badge/Priority-10/10-red)](ROADMAP.md)
 
