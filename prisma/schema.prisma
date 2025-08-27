@@ -1,0 +1,114 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           Int        @id @default(autoincrement())
+  username     String     @unique
+  email        String?    @unique
+  passwordHash String
+  money        BigInt     @default(0)
+  respect      Int        @default(0)
+  level        Int        @default(1)
+  health       Int        @default(100)
+  maxHealth    Int        @default(100)
+  energy       Int        @default(100)
+  maxEnergy    Int        @default(100)
+  rank         String     @default("Associate")
+  family       Family?    @relation("familyMembers", fields: [familyId], references: [id])
+  familyId     Int?
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  inventory    Inventory[]
+  crimeLogs    CrimeLog[]
+  combatLogs   CombatLog[] @relation("attacker")
+  defenderLogs CombatLog[] @relation("defender")
+  sessions     Session[]
+  ownedFamily  Family?    @relation("familyBoss")
+  isBanned     Boolean    @default(false)
+  lastActionAt DateTime?
+}
+
+model Session {
+  id        Int     @id @default(autoincrement())
+  userId    Int
+  user      User    @relation(fields: [userId], references: [id])
+  token     String  @unique
+  createdAt DateTime @default(now())
+  expiresAt DateTime
+  ip        String?
+}
+
+// Placeholder models for relations (to be expanded in future phases)
+model Item {
+  id          Int       @id @default(autoincrement())
+  name        String
+  type        String    // e.g. "weapon", "consumable", "armor"
+  power       Int       @default(0)
+  boostEnergy Int       @default(0)
+  price       BigInt
+  createdAt   DateTime  @default(now())
+  inventory   Inventory[]
+}
+
+model Inventory {
+  id       Int   @id @default(autoincrement())
+  user     User  @relation(fields: [userId], references: [id])
+  userId   Int
+  item     Item  @relation(fields: [itemId], references: [id])
+  itemId   Int
+  qty      Int   @default(1)
+  equipped Boolean @default(false)
+}
+
+model Crime {
+  id           Int     @id @default(autoincrement())
+  key          String  @unique
+  name         String
+  minLevel     Int     @default(1)
+  energyCost   Int
+  successRate  Int     // 0-100 base
+  rewardCash   BigInt
+  rewardRespect Int
+  cooldownSec  Int
+  crimeLogs    CrimeLog[]
+}
+
+model CrimeLog {
+  id        Int      @id @default(autoincrement())
+  user      User     @relation(fields: [userId], references: [id])
+  userId    Int
+  crime     Crime    @relation(fields: [crimeId], references: [id])
+  crimeId   Int
+  success   Boolean
+  cashEarned BigInt
+  respectEarned Int
+  createdAt DateTime @default(now())
+}
+
+model CombatLog {
+  id          Int @id @default(autoincrement())
+  attackerId  Int
+  defenderId  Int
+  attacker    User @relation("attacker", fields: [attackerId], references: [id])
+  defender    User @relation("defender", fields: [defenderId], references: [id])
+  result      String
+  createdAt   DateTime @default(now())
+}
+
+model Family {
+  id        Int     @id @default(autoincrement())
+  name      String  @unique
+  bossId    Int     @unique
+  boss      User    @relation("familyBoss", fields: [bossId], references: [id])
+  members   User[]  @relation("familyMembers")
+  createdAt DateTime @default(now())
+}
