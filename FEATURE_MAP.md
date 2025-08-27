@@ -172,3 +172,76 @@ WebSocket URL: http://localhost:3001
 8. `feature/game-logic` – economy, win conditions, leaderboards
 9. `feature/ui-components` – visual components for map, stats
 10. `feature/user-interface` – polish and UX improvements
+
+---
+
+## **Visual Team Roadmap & Branch Diagram**
+
+```
+                          ┌─────────────────────┐
+                          │        main         │
+                          │  Stable / Release   │
+                          └─────────────────────┘
+                                     ▲
+                                     │
+                              Merge from develop
+                                     ▲
+                          ┌─────────────────────┐
+                          │      develop        │
+                          │ Daily integration   │
+                          └─────────────────────┘
+                                     ▲
+        ┌─────────────┬───────────────┬───────────────┬───────────────┐
+        │             │               │               │               │
+┌────────────────┐ ┌────────────────┐ ┌────────────────┐ ┌────────────────┐
+│ feature/game-  │ │ feature/player-│ │ feature/turf- │ │ feature/day-   │
+│ lobby          │ │ roles          │ │ system        │ │ night-cycle    │
+│ Frontend: UI   │ │ Backend: logic │ │ Backend: turf │ │ Backend: cycle │
+│ Dev2           │ │ Dev3           │ │ Dev6          │ │ Dev4           │
+└────────────────┘ └────────────────┘ └────────────────┘ └────────────────┘
+        │                  │                 │                 │
+        ▼                  ▼                 ▼                 ▼
+┌────────────────┐ ┌────────────────┐ ┌────────────────┐ ┌────────────────┐
+│ feature/chat-  │ │ feature/voting │ │ feature/action│ │ feature/game-  │
+│ system         │ │ -system        │ │ -system       │ │ logic          │
+│ Frontend: Dev2 │ │ Backend: Dev5  │ │ Backend: Dev5 │ │ Backend: Dev4 │
+│ Backend: Dev6  │ └────────────────┘ └────────────────┘ └────────────────┘
+        │
+        ▼
+┌────────────────┐
+│ feature/ui-    │
+│ components     │
+│ Frontend: Dev1 │
+└────────────────┘
+        │
+        ▼
+┌────────────────┐
+│ feature/user-  │
+│ interface      │
+│ Frontend: Dev1 │
+└────────────────┘
+```
+
+## **Folder / Feature Split**
+
+| Folder     | Branch / Feature                                                                     | Dev Assignment | Notes                                               |
+| ---------- | ------------------------------------------------------------------------------------ | -------------- | --------------------------------------------------- |
+| `frontend` | game-lobby, chat-system, ui-components, user-interface                               | Dev1 & Dev2    | UI, player interactions, chat                       |
+| `backend`  | player-roles, day-night-cycle, turf-system, game-logic, action-system, voting-system | Dev3–Dev6      | Game mechanics, Socket.IO events, state persistence |
+| `shared`   | TypeScript types/interfaces (`PlayerAction`, `GameState`, `Gang`, `Turf`)            | All devs       | Ensure consistency between frontend & backend       |
+
+## **How to Use This Diagram**
+
+1. Each dev picks a **feature branch** assigned to them.
+2. Work inside the folder corresponding to the branch:
+
+   * Frontend → `frontend/`
+   * Backend → `backend/`
+   * Shared → `shared/` (types/interfaces)
+3. Merge feature branches to `develop` frequently.
+4. After core features are stable, merge `develop` → `main`.
+5. Follow the **priority order** from foundational features to UI polish.
+
+---
+
+This **maps directly to your crime/urban mafia game**. Each dev can pick their branch, work independently, and integrate features progressively.
