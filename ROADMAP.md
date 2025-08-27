@@ -1,6 +1,6 @@
 # Mob-Life: Mafia Strategy Game — Development Roadmap
 
-[![Development Phases](https://img.shields.io/badge/Phases-0_Complete-blue)](ROADMAP.md)
+[![Development Phases](https://img.shields.io/badge/Phases-9_Complete-blue)](ROADMAP.md)
 [![Current Phase](https://img.shields.io/badge/Current_Phase-1-orange)](ROADMAP.md)
 [![Priority Focus](https://img.shields.io/badge/Priority-10/10-red)](ROADMAP.md)
 
@@ -14,6 +14,10 @@
 
 ### Phase 1: Foundation & Core Multiplayer (0–2 weeks)
 **Goal:** Build the multiplayer infrastructure and basic onboarding.
+
+[![Phase 1](https://img.shields.io/badge/Phase_1-75%25_Complete-yellow)](ROADMAP.md#phase-1-foundation--core-multiplayer-0-2-weeks)
+[![Priority](https://img.shields.io/badge/Priority-10/10-red)](ROADMAP.md#phase-1-foundation--core-multiplayer-0-2-weeks)
+[![Timeline](https://img.shields.io/badge/Timeline-0–2_weeks-blue)](ROADMAP.md#phase-1-foundation--core-multiplayer-0-2-weeks)
 
 #### Features:
 - ✅ Next.js + TypeScript setup (frontend)
@@ -32,6 +36,10 @@
 ### Phase 2: Player Progression & Stats (2–4 weeks)
 **Goal:** Implement character development and stats.
 
+[![Phase 2](https://img.shields.io/badge/Phase_2-Planned-lightgrey)](ROADMAP.md#phase-2-player-progression--stats-2-4-weeks)
+[![Priority](https://img.shields.io/badge/Priority-9/10-orange)](ROADMAP.md#phase-2-player-progression--stats-2-4-weeks)
+[![Timeline](https://img.shields.io/badge/Timeline-2–4_weeks-blue)](ROADMAP.md#phase-2-player-progression--stats-2-4-weeks)
+
 #### Features:
 - ⏳ Player attributes: strength, intelligence, stealth, reputation
 - ⏳ Experience points & leveling
@@ -46,6 +54,10 @@
 
 ### Phase 3: Economy & Resources (3–5 weeks)
 **Goal:** Build a functional in-game economy.
+
+[![Phase 3](https://img.shields.io/badge/Phase_3-Planned-lightgrey)](ROADMAP.md#phase-3-economy--resources-3-5-weeks)
+[![Priority](https://img.shields.io/badge/Priority-8/10-yellow)](ROADMAP.md#phase-3-economy--resources-3-5-weeks)
+[![Timeline](https://img.shields.io/badge/Timeline-3–5_weeks-blue)](ROADMAP.md#phase-3-economy--resources-3-5-weeks)
 
 #### Features:
 - ⏳ Currency system (money, gang funds)
@@ -62,6 +74,10 @@
 ### Phase 4: Crime & PvP Mechanics (4–7 weeks)
 **Goal:** Implement strategic criminal actions and player conflicts.
 
+[![Phase 4](https://img.shields.io/badge/Phase_4-Planned-lightgrey)](ROADMAP.md#phase-4-crime--pvp-mechanics-4-7-weeks)
+[![Priority](https://img.shields.io/badge/Priority-10/10-red)](ROADMAP.md#phase-4-crime--pvp-mechanics-4-7-weeks)
+[![Timeline](https://img.shields.io/badge/Timeline-4–7_weeks-blue)](ROADMAP.md#phase-4-crime--pvp-mechanics-4-7-weeks)
+
 #### Features:
 - ⏳ Night-time crime actions (hits, heists, protection, espionage)
 - ⏳ PvP conflicts: gang wars, duels, territory raids
@@ -76,6 +92,10 @@
 
 ### Phase 5: Social & Communication (5–8 weeks)
 **Goal:** Enable player interaction and social gameplay.
+
+[![Phase 5](https://img.shields.io/badge/Phase_5-Planned-lightgrey)](ROADMAP.md#phase-5-social--communication-5-8-weeks)
+[![Priority](https://img.shields.io/badge/Priority-9/10-orange)](ROADMAP.md#phase-5-social--communication-5-8-weeks)
+[![Timeline](https://img.shields.io/badge/Timeline-5–8_weeks-blue)](ROADMAP.md#phase-5-social--communication-5-8-weeks)
 
 #### Features:
 - ⏳ Global chat, gang chat, private messages
@@ -92,6 +112,10 @@
 ### Phase 6: Missions, Events & Storyline (6–10 weeks)
 **Goal:** Add depth with dynamic content and PvE.
 
+[![Phase 6](https://img.shields.io/badge/Phase_6-Planned-lightgrey)](ROADMAP.md#phase-6-missions--events--storyline-6-10-weeks)
+[![Priority](https://img.shields.io/badge/Priority-7/10-green)](ROADMAP.md#phase-6-missions--events--storyline-6-10-weeks)
+[![Timeline](https://img.shields.io/badge/Timeline-6–10_weeks-blue)](ROADMAP.md#phase-6-missions--events--storyline-6-10-weeks)
+
 #### Features:
 - ⏳ Story-driven missions and side quests
 - ⏳ Dynamic city events (police raids, rival gang attacks)
@@ -106,6 +130,10 @@
 
 ### Phase 7: UI/UX & Accessibility (8–12 weeks)
 **Goal:** Polish the player interface and experience.
+
+[![Phase 7](https://img.shields.io/badge/Phase_7-Planned-lightgrey)](ROADMAP.md#phase-7-uiux--accessibility-8-12-weeks)
+[![Priority](https://img.shields.io/badge/Priority-8/10-yellow)](ROADMAP.md#phase-7-uiux--accessibility-8-12-weeks)
+[![Timeline](https://img.shields.io/badge/Timeline-8–12_weeks-blue)](ROADMAP.md#phase-7-uiux--accessibility-8-12-weeks)
 
 #### Features:
 - ⏳ Responsive design for desktop & mobile
@@ -122,6 +150,10 @@
 ### Phase 8: Leaderboards, Analytics & Admin Tools (10–14 weeks)
 **Goal:** Provide competitive metrics and manage the game world.
 
+[![Phase 8](https://img.shields.io/badge/Phase_8-Planned-lightgrey)](ROADMAP.md#phase-8-leaderboards--analytics--admin-tools-10-14-weeks)
+[![Priority](https://img.shields.io/badge/Priority-7/10-green)](ROADMAP.md#phase-8-leaderboards--analytics--admin-tools-10-14-weeks)
+[![Timeline](https://img.shields.io/badge/Timeline-10–14_weeks-blue)](ROADMAP.md#phase-8-leaderboards--analytics--admin-tools-10-14-weeks)
+
 #### Features:
 - ⏳ Player and gang leaderboards
 - ⏳ Statistics tracking for crimes, missions, PvP outcomes
@@ -135,6 +167,10 @@
 
 ### Phase 9: Advanced Mechanics & Optional Features (12+ weeks)
 **Goal:** Add complexity for hardcore players.
+
+[![Phase 9](https://img.shields.io/badge/Phase_9-Planned-lightgrey)](ROADMAP.md#phase-9-advanced-mechanics--optional-features-12-weeks)
+[![Priority](https://img.shields.io/badge/Priority-6/10-lightgreen)](ROADMAP.md#phase-9-advanced-mechanics--optional-features-12-weeks)
+[![Timeline](https://img.shields.io/badge/Timeline-12+_weeks-blue)](ROADMAP.md#phase-9-advanced-mechanics--optional-features-12-weeks)
 
 #### Features:
 - ⏳ Strategic alliances and rivalries between gangs
