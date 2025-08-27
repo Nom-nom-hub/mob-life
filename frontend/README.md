@@ -12,13 +12,16 @@ Frontend client for the Mob-Life multiplayer mafia game built with the latest Ne
 
 ## 🎮 About
 
-This is the React frontend for Mob-Life, a real-time multiplayer game where players form gangs, control turf, and engage in strategic crime operations. The frontend handles:
+This is the React frontend for Mob-Life, a browser-based text MMORPG in the mafia/crime genre. The frontend provides:
 
-- Game lobby and room management
-- Real-time game state display
-- Player interactions and chat
-- Responsive UI for desktop and mobile
-- WebSocket connection to backend game server
+- Character creation and management interface
+- Text-based game world navigation and interaction
+- Stats and inventory management displays
+- Social features (chat, alliances, rivalries)
+- Market and economy interfaces
+- Gang management and recruitment tools
+- Browser-based responsive design for desktop and mobile
+- WebSocket connection to backend for real-time chat and notifications
 
 ## 🚀 Getting Started
 
@@ -73,13 +76,15 @@ frontend/
 - WebSocket integration with backend
 
 ### Planned Features
-- Game lobby interface
-- Real-time game board
-- Player chat system
-- Turf control map
-- Action selection UI
-- Voting mechanics
-- Responsive mobile design
+- Character creation interface with stat allocation
+- Text-based game world with menu-driven navigation
+- Inventory and equipment management system
+- Real-time chat and social features
+- Market interface for buying/selling goods
+- Gang management and recruitment interface
+- Mission/job selection and tracking system
+- Achievement and reputation display
+- Mobile-optimized text interface
 
 ## 🔧 Development Guidelines
 
@@ -104,10 +109,12 @@ frontend/
 
 ### WebSocket Events
 The frontend connects to backend Socket.IO events:
-- `joinGame` - Join/create game rooms
-- `chatMessage` - Real-time chat
-- `gameState` - Game state updates (planned)
-- `playerAction` - Action submissions (planned)
+- `chatMessage` - Real-time chat and social interactions
+- `marketUpdate` - Live market price changes and transactions
+- `gangInvite` - Gang membership invitations and updates
+- `achievementUnlock` - Character milestone notifications
+- `energyRegen` - Stamina/energy regeneration updates
+- `worldEvent` - Server-wide events and announcements
 
 ### Shared Types
 Import game types from the `shared/` directory:

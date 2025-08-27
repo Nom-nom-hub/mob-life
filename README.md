@@ -17,16 +17,17 @@
 [![Real-time](https://img.shields.io/badge/Real--time-Multiplayer-blue)](https://socket.io/)
 [![Platform](https://img.shields.io/badge/Platform-Web-green)](https://developer.mozilla.org/en-US/docs/Web)
 
-A multiplayer mafia-style game where players form gangs, control turf, and engage in strategic crime operations in a gritty urban setting.
+A browser-based text MMORPG in the mafia/crime genre. Create a character, rise through the criminal underworld, build your crew, and dominate the persistent online world through strategic gameplay and social alliances.
 
 ## 🎮 Game Overview
 
-Mob-Life is a real-time multiplayer game featuring:
-- **Gang Formation**: Players create or join gangs to control territories
-- **Turf Wars**: Strategic battles for neighborhood control
-- **Crime Operations**: Night-time actions including hits, protection, and theft
-- **Economy System**: Money, drugs, and resource management
-- **Political Intrigue**: Voting, alliances, and betrayals
+Mob-Life is a browser-based text MMORPG featuring:
+- **Persistent World**: 24/7 online world with character progression saved to database
+- **Stat-Driven Gameplay**: Level up skills in combat, business, social manipulation, and crime
+- **Turn-Based Mechanics**: Actions consume energy/stamina requiring strategic timing
+- **Dynamic Economy**: Player-driven market for weapons, drugs, properties, and information
+- **Social Systems**: Gang formation, alliances, rivalries, and community interactions
+- **PvP & PvE**: Battle NPCs on missions or challenge other players in various conflicts
 
 ## 🏗️ Project Structure
 
@@ -96,20 +97,21 @@ mob-life/
 ## 🎯 Game Features
 
 ### Core Mechanics
-- **Multiplayer Lobby**: Create/join game rooms (6-12 players)
-- **Gang System**: Form alliances and rivalries
-- **Turf Control**: Strategic map-based territory management
-- **Day/Night Cycle**: Different mechanics for planning vs action phases
-- **Action System**: Night-time crime operations (attacks, protection, theft)
-- **Voting Mechanics**: Day-time political decisions and conflict resolution
-- **Chat System**: In-game communication with private gang channels
-- **Economy**: Resource management and progression systems
+- **Character Creation**: Choose background, skills, and starting path
+- **Stat Progression**: Level up combat, stealth, business, and social skills
+- **Energy System**: Actions consume stamina requiring strategic timing
+- **Gang System**: Form crews, establish hierarchies, and build alliances
+- **Crime System**: Commit heists, trafficking, protection, and other illegal activities
+- **Market Dynamics**: Buy/sell weapons, drugs, properties, and information
+- **Social Features**: Chat, alliances, rivalries, and reputation system
+- **Persistent World**: Character progress saved in database, accessible 24/7
 
-### Player Roles
-- **Gang Leader**: Commands gang operations and strategy
-- **Enforcer**: Executes hits and protection duties
-- **Dealer**: Manages drug trade and resource distribution
-- **Civilian**: Independent operators with flexible allegiances
+### Character Specializations
+- **Combat Specialist**: Expert in fights, heists, and protection services
+- **Business Mogul**: Master of economics, trading, and legitimate business fronts
+- **Social Manipulator**: Expert in alliances, information gathering, and influence
+- **Stealth Operator**: Specialist in covert operations, smuggling, and espionage
+- **Custom Builds**: Mix and match skills to create unique character archetypes
 
 ## 👥 Team Development
 
@@ -141,19 +143,22 @@ main (stable releases)
 ### Backend
 - **Runtime**: Node.js
 - **Framework**: Express.js
-- **Real-time**: Socket.IO
+- **Database**: PostgreSQL with Prisma ORM
+- **Real-time**: Socket.IO for live chat and notifications
 - **Language**: TypeScript
 - **Development**: ts-node-dev (hot reload)
 
 ### Frontend
-- **Framework**: Next.js 14 (App Router)
+- **Framework**: Next.js (latest)
 - **Language**: TypeScript
-- **Styling**: Tailwind CSS (planned)
-- **State Management**: React hooks + Context (planned)
+- **Styling**: Tailwind CSS with custom mafia-themed design
+- **State Management**: React hooks + Context API
+- **Interface**: Text-based with menu-driven navigation
 
 ### Shared
-- **Types**: TypeScript interfaces
-- **Validation**: Runtime type checking (planned)
+- **Types**: TypeScript interfaces for game entities
+- **Validation**: Runtime type checking
+- **Communication**: REST API + WebSocket events
 
 ## 📁 Development Guidelines
 
@@ -179,17 +184,19 @@ main (stable releases)
 
 ## 🎮 Gameplay Flow
 
-1. **Lobby Phase**: Players join/create rooms and form gangs
-2. **Setup Phase**: Roles assigned, initial turf distribution
-3. **Day Phase**: Planning, voting, political maneuvering
-4. **Night Phase**: Crime operations and actions
-5. **Resolution Phase**: Action outcomes revealed
-6. **Repeat**: Cycles continue until win conditions met
+1. **Character Creation**: Choose background, skills, and starting specialization
+2. **Tutorial Missions**: Learn basic mechanics through guided text-based scenarios
+3. **Skill Progression**: Complete jobs and crimes to level up stats and reputation
+4. **Gang Formation**: Recruit members and establish your crew's hierarchy
+5. **Empire Building**: Expand influence through business ventures and criminal operations
+6. **Rivalry & Conflict**: Challenge other players and gangs for territory and resources
+7. **Legend Status**: Become the most feared and respected figure in the underworld
 
-### Win Conditions
-- **Turf Domination**: Control majority of map territories
-- **Gang Supremacy**: Largest gang by membership and resources
-- **Economic Victory**: Highest accumulated wealth
+### Progression Goals
+- **Wealth Accumulation**: Build the largest fortune through legitimate and illegitimate means
+- **Territory Control**: Establish dominance over key areas of the criminal underworld
+- **Gang Leadership**: Build and maintain the most powerful criminal organization
+- **Personal Legend**: Achieve legendary status through reputation and accomplishments
 
 ## 🤝 Contributing
 
