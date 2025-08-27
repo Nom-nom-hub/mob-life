@@ -13,7 +13,6 @@
 [![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-[![Game Type](https://img.shields.io/badge/Game-Mafia/Werewolf-red)](https://en.wikipedia.org/wiki/Mafia_(party_game))
 [![Players](https://img.shields.io/badge/Players-6--12-orange)](FEATURE_MAP.md)
 [![Real-time](https://img.shields.io/badge/Real--time-Multiplayer-blue)](https://socket.io/)
 [![Platform](https://img.shields.io/badge/Platform-Web-green)](https://developer.mozilla.org/en-US/docs/Web)
