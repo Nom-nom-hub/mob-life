@@ -1,8 +1,12 @@
-Perfect. Here’s a **customized feature map and branch plan** for your “Mob-Life” mafia game with gangs, drugs, turf, and all that gritty gameplay. I’ve aligned it with a **6-person team workflow** so you can start coding immediately.
-
----
-
 # **Mob-Life: Gang & Crime Mafia Game — Feature Map**
+
+[![Team Size](https://img.shields.io/badge/Team_Size-6_Developers-blue)](https://github.com/Nom-nom-hub/mob-life)
+[![Branches](https://img.shields.io/badge/Feature_Branches-10-orange)](https://github.com/Nom-nom-hub/mob-life/branches)
+[![Workflow](https://img.shields.io/badge/Workflow-GitFlow-green)](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+[![Collaboration](https://img.shields.io/badge/Collaboration-Real--time-purple)](https://socket.io/)
+[![Priority](https://img.shields.io/badge/Priority-Order-red)](FEATURE_MAP.md#priority-order-recommended)
+[![Frontend](https://img.shields.io/badge/Frontend-Next.js-black)](https://nextjs.org/)
+[![Backend](https://img.shields.io/badge/Backend-Node.js-green)](https://nodejs.org/)
 
 ## **Project Overview**
 
@@ -241,7 +245,3 @@ WebSocket URL: http://localhost:3001
 3. Merge feature branches to `develop` frequently.
 4. After core features are stable, merge `develop` → `main`.
 5. Follow the **priority order** from foundational features to UI polish.
-
----
-
-This **maps directly to your crime/urban mafia game**. Each dev can pick their branch, work independently, and integrate features progressively.

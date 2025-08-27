@@ -1,5 +1,13 @@
 # Mob-Life Backend
 
+[![Backend Status](https://img.shields.io/badge/Backend-Active-success)](https://github.com/Nom-nom-hub/mob-life)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Express.js](https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white)](https://expressjs.com/)
+[![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?logo=socket.io&logoColor=white)](https://socket.io/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Real-time](https://img.shields.io/badge/Real--time-Communication-blue)](https://socket.io/)
+[![Port](https://img.shields.io/badge/Port-3001-orange)](http://localhost:3001)
+
 Backend server for the Mob-Life multiplayer mafia game built with Node.js, Express, and Socket.IO.
 
 ## 🎮 About

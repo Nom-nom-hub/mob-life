@@ -1,5 +1,23 @@
 # Mob-Life: Gang & Crime Mafia Game
 
+[![Project Status: Active](https://img.shields.io/badge/status-active-success.svg)](https://github.com/Nom-nom-hub/mob-life)
+[![GitHub Issues](https://img.shields.io/github/issues/Nom-nom-hub/mob-life)](https://github.com/Nom-nom-hub/mob-life/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/Nom-nom-hub/mob-life)](https://github.com/Nom-nom-hub/mob-life/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Express.js](https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white)](https://expressjs.com/)
+[![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?logo=socket.io&logoColor=white)](https://socket.io/)
+[![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+
+[![Game Type](https://img.shields.io/badge/Game-Mafia/Werewolf-red)](https://en.wikipedia.org/wiki/Mafia_(party_game))
+[![Players](https://img.shields.io/badge/Players-6--12-orange)](FEATURE_MAP.md)
+[![Real-time](https://img.shields.io/badge/Real--time-Multiplayer-blue)](https://socket.io/)
+[![Platform](https://img.shields.io/badge/Platform-Web-green)](https://developer.mozilla.org/en-US/docs/Web)
+
 A multiplayer mafia-style game where players form gangs, control turf, and engage in strategic crime operations in a gritty urban setting.
 
 ## 🎮 Game Overview
