@@ -1,14 +1,14 @@
 # Mob-Life Frontend
 
 [![Frontend Status](https://img.shields.io/badge/Frontend-Active-success)](https://github.com/Nom-nom-hub/mob-life)
-[![Next.js](https://img.shields.io/badge/Next.js-14+-000000?logo=next.js&logoColor=white)](https://nextjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-latest-000000?logo=next.js&logoColor=white)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-18+-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![ESLint](https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white)](https://eslint.org/)
 [![Port](https://img.shields.io/badge/Port-3000-blue)](http://localhost:3000)
 
-Frontend client for the Mob-Life multiplayer mafia game built with Next.js 14.
+Frontend client for the Mob-Life multiplayer mafia game built with the latest Next.js.
 
 ## 🎮 About
 
