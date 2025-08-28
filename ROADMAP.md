@@ -1,0 +1,313 @@
+# Mob-Life: Mafia Strategy Game — Development Roadmap
+
+[![Development Phases](https://img.shields.io/badge/Phases-9_Complete-blue)](ROADMAP.md)
+[![Current Phase](https://img.shields.io/badge/Current_Phase-1-orange)](ROADMAP.md)
+[![Priority Focus](https://img.shields.io/badge/Priority-10/10-red)](ROADMAP.md)
+[![Database](https://img.shields.io/badge/Database-TypeORM-success)](ROADMAP.md#technical-architecture)
+[![AI](https://img.shields.io/badge/AI-Integration-purple)](ROADMAP.md#technical-architecture)
+
+## Project Overview
+
+**Mob-Life** is a text-based multiplayer mafia strategy game where players build criminal empires through strategic decision-making, resource management, and social alliances. The game emphasizes persistent worlds, **AI-generated dynamic content**, player-driven narratives, and menu-driven interactions without graphics or mini-games.
+
+---
+
+## Development Phases
+
+### Phase 1: Foundation & Core Multiplayer (0–2 weeks)
+**Goal:** Build the multiplayer infrastructure and basic onboarding.
+
+[![Phase 1](https://img.shields.io/badge/Phase_1-95%25_Complete-green)](ROADMAP.md#phase-1-foundation--core-multiplayer-0-2-weeks)
+[![Priority](https://img.shields.io/badge/Priority-10/10-red)](ROADMAP.md#phase-1-foundation--core-multiplayer-0-2-weeks)
+[![Timeline](https://img.shields.io/badge/Timeline-0–2_weeks-blue)](ROADMAP.md#phase-1-foundation--core-multiplayer-0-2-weeks)
+
+#### Features:
+- ✅ Next.js + TypeScript setup (frontend)
+- ✅ Landing page & components
+- ✅ **TypeORM Database Schema** (10 complete entities)
+- ✅ **Multi-Provider AI Service** (Ollama/Gemini/OpenAI)
+- ✅ **Enhanced Backend Integration** (TypeORM + Socket.IO)
+- 🔄 Game room creation/joining (6–10 players per room)
+- 🔄 Socket.IO real-time connection
+- ⏳ Player registration & profiles
+- ⏳ Basic roles & gang assignment (Don, Underboss, Soldier, Civilian)
+- ⏳ Persistent backend for player stats, inventory, and session data
+
+**Priority:** 10/10 — Foundation for everything else
+**Status:** 95% Complete
+
+---
+
+### Phase 2: Player Progression & Stats (2–4 weeks)
+**Goal:** Implement character development and stats.
+
+[![Phase 2](https://img.shields.io/badge/Phase_2-Planned-lightgrey)](ROADMAP.md#phase-2-player-progression--stats-2-4-weeks)
+[![Priority](https://img.shields.io/badge/Priority-9/10-orange)](ROADMAP.md#phase-2-player-progression--stats-2-4-weeks)
+[![Timeline](https://img.shields.io/badge/Timeline-2–4_weeks-blue)](ROADMAP.md#phase-2-player-progression--stats-2-4-weeks)
+
+#### Features:
+- ⏳ Player attributes: strength, intelligence, stealth, reputation
+- ⏳ Experience points & leveling
+- ⏳ Skill system for special actions (combat, hacking, negotiation)
+- ⏳ Persistent inventory: weapons, money, drugs, assets
+- ⏳ Gang hierarchy & permissions
+
+**Priority:** 9/10 — Essential for meaningful gameplay
+**Status:** Planned
+
+---
+
+### Phase 3: Economy & Resources (3–5 weeks)
+**Goal:** Build a functional in-game economy.
+
+[![Phase 3](https://img.shields.io/badge/Phase_3-Planned-lightgrey)](ROADMAP.md#phase-3-economy--resources-3-5-weeks)
+[![Priority](https://img.shields.io/badge/Priority-8/10-yellow)](ROADMAP.md#phase-3-economy--resources-3-5-weeks)
+[![Timeline](https://img.shields.io/badge/Timeline-3–5_weeks-blue)](ROADMAP.md#phase-3-economy--resources-3-5-weeks)
+
+#### Features:
+- ⏳ Currency system (money, gang funds)
+- ⏳ Item trading (drugs, weapons, vehicles)
+- ⏳ Businesses & assets that generate passive income
+- ⏳ Marketplace for player-to-player trading
+- ⏳ Banking, black market mechanics, laundering
+
+**Priority:** 8/10 — Foundation for strategy and progression
+**Status:** Planned
+
+---
+
+### Phase 4: Crime & PvP Mechanics (4–7 weeks)
+**Goal:** Implement strategic criminal actions and player conflicts.
+
+[![Phase 4](https://img.shields.io/badge/Phase_4-Planned-lightgrey)](ROADMAP.md#phase-4-crime--pvp-mechanics-4-7-weeks)
+[![Priority](https://img.shields.io/badge/Priority-10/10-red)](ROADMAP.md#phase-4-crime--pvp-mechanics-4-7-weeks)
+[![Timeline](https://img.shields.io/badge/Timeline-4–7_weeks-blue)](ROADMAP.md#phase-4-crime--pvp-mechanics-4-7-weeks)
+
+#### Features:
+- ⏳ Night-time crime actions (hits, heists, protection, espionage)
+- ⏳ PvP conflicts: gang wars, duels, territory raids
+- ⏳ Territory control: text-based city map with gang influence
+- ⏳ Risk/reward mechanics for crimes
+- ⏳ Cooldowns & planning system
+
+**Priority:** 10/10 — Core mafia game mechanics
+**Status:** Planned
+
+---
+
+### Phase 5: Social & Communication (5–8 weeks)
+**Goal:** Enable player interaction and social gameplay.
+
+[![Phase 5](https://img.shields.io/badge/Phase_5-Planned-lightgrey)](ROADMAP.md#phase-5-social--communication-5-8-weeks)
+[![Priority](https://img.shields.io/badge/Priority-9/10-orange)](ROADMAP.md#phase-5-social--communication-5-8-weeks)
+[![Timeline](https://img.shields.io/badge/Timeline-5–8_weeks-blue)](ROADMAP.md#phase-5-social--communication-5-8-weeks)
+
+#### Features:
+- ⏳ Global chat, gang chat, private messages
+- ⏳ Gang creation and hierarchy management
+- ⏳ Voting for leaders or strategic decisions within gangs
+- ⏳ Reputation system (respect, notoriety, alliances)
+- ⏳ Moderation tools (mute, ban, report)
+
+**Priority:** 9/10 — Critical for MMO-style engagement
+**Status:** Planned
+
+---
+
+### Phase 6: Missions, Events & Storyline (6–10 weeks)
+**Goal:** Add depth with dynamic content and PvE.
+
+[![Phase 6](https://img.shields.io/badge/Phase_6-Planned-lightgrey)](ROADMAP.md#phase-6-missions--events--storyline-6-10-weeks)
+[![Priority](https://img.shields.io/badge/Priority-7/10-green)](ROADMAP.md#phase-6-missions--events--storyline-6-10-weeks)
+[![Timeline](https://img.shields.io/badge/Timeline-6–10_weeks-blue)](ROADMAP.md#phase-6-missions--events--storyline-6-10-weeks)
+
+#### Features:
+- ⏳ Story-driven missions and side quests
+- ⏳ Dynamic city events (police raids, rival gang attacks)
+- ⏳ NPC gangs with AI behaviors
+- ⏳ Seasonal or timed events
+- ⏳ Rewards tied to progression and economy
+
+**Priority:** 7/10 — Enhances long-term player engagement
+**Status:** Planned
+
+---
+
+### Phase 7: UI/UX & Accessibility (8–12 weeks)
+**Goal:** Polish the player interface and experience.
+
+[![Phase 7](https://img.shields.io/badge/Phase_7-Planned-lightgrey)](ROADMAP.md#phase-7-uiux--accessibility-8-12-weeks)
+[![Priority](https://img.shields.io/badge/Priority-8/10-yellow)](ROADMAP.md#phase-7-uiux--accessibility-8-12-weeks)
+[![Timeline](https://img.shields.io/badge/Timeline-8–12_weeks-blue)](ROADMAP.md#phase-7-uiux--accessibility-8-12-weeks)
+
+#### Features:
+- ⏳ Responsive design for desktop & mobile
+- ⏳ Dashboards for player stats, gang info, inventory
+- ⏳ Status notifications for attacks, messages, mission results
+- ⏳ Light/dark mode & accessibility features (font size, readability)
+- ⏳ Menu-driven UI with clear navigation
+
+**Priority:** 8/10 — Improves usability and retention
+**Status:** Planned
+
+---
+
+### Phase 8: Leaderboards, Analytics & Admin Tools (10–14 weeks)
+**Goal:** Provide competitive metrics and manage the game world.
+
+[![Phase 8](https://img.shields.io/badge/Phase_8-Planned-lightgrey)](ROADMAP.md#phase-8-leaderboards--analytics--admin-tools-10-14-weeks)
+[![Priority](https://img.shields.io/badge/Priority-7/10-green)](ROADMAP.md#phase-8-leaderboards--analytics--admin-tools-10-14-weeks)
+[![Timeline](https://img.shields.io/badge/Timeline-10–14_weeks-blue)](ROADMAP.md#phase-8-leaderboards--analytics--admin-tools-10-14-weeks)
+
+#### Features:
+- ⏳ Player and gang leaderboards
+- ⏳ Statistics tracking for crimes, missions, PvP outcomes
+- ⏳ Admin panel for moderation, logging, and balance tweaks
+- ⏳ In-game analytics for player behavior
+
+**Priority:** 7/10 — Adds competitive and management depth
+**Status:** Planned
+
+---
+
+### Phase 9: Advanced Mechanics & Optional Features (12+ weeks)
+**Goal:** Add complexity for hardcore players.
+
+[![Phase 9](https://img.shields.io/badge/Phase_9-Planned-lightgrey)](ROADMAP.md#phase-9-advanced-mechanics--optional-features-12-weeks)
+[![Priority](https://img.shields.io/badge/Priority-6/10-lightgreen)](ROADMAP.md#phase-9-advanced-mechanics--optional-features-12-weeks)
+[![Timeline](https://img.shields.io/badge/Timeline-12+_weeks-blue)](ROADMAP.md#phase-9-advanced-mechanics--optional-features-12-weeks)
+
+#### Features:
+- ⏳ Strategic alliances and rivalries between gangs
+- ⏳ Branching storylines & narrative choices
+- ⏳ Achievements, cosmetic text badges, and titles
+- ⏳ ASCII animations or UI transitions
+- ⏳ Social platform integrations (stat sharing, recruitment)
+
+**Priority:** 6/10 — For long-term engagement and replayability
+**Status:** Planned
+
+---
+
+## Technical Architecture
+
+### Frontend
+- **Framework:** Next.js 14+ with TypeScript
+- **Styling:** Tailwind CSS with custom design system
+- **State Management:** React hooks + Context API
+- **Real-time:** Socket.IO client for multiplayer features
+
+### Backend
+- **Runtime:** Node.js with TypeScript
+- **Framework:** Express.js
+- **Database:** PostgreSQL with **TypeORM** (high-performance ORM)
+- **Real-time:** Socket.IO for live multiplayer interactions
+- **Authentication:** JWT with secure session management
+- **AI Integration:** Multi-provider LLM service (Ollama/Gemini/OpenAI)
+
+### Shared
+- **Types:** TypeScript interfaces for type safety
+- **Game Logic:** Centralized game rules and calculations
+- **Constants:** Game configuration and balance values
+
+---
+
+## Development Guidelines
+
+### Code Quality
+- **Linting:** ESLint with TypeScript rules
+- **Formatting:** Prettier for consistent code style
+- **Testing:** Jest for unit tests, Cypress for E2E
+- **Documentation:** JSDoc for API documentation
+
+### Game Design Principles
+- **Text-Based:** All interactions through menus and text
+- **Persistent:** Player actions have lasting consequences
+- **Social:** Emphasis on player interaction and alliances
+- **Strategic:** Risk/reward mechanics guide decision-making
+- **Scalable:** Architecture supports 100+ concurrent players
+
+---
+
+## Success Metrics
+
+### Player Engagement
+- Daily/Weekly Active Users
+- Average Session Duration
+- Player Retention (Day 1, Day 7, Day 30)
+- Gang Formation Rate
+
+### Game Health
+- Server Stability & Performance
+- Player Satisfaction Surveys
+- Bug Report Volume & Resolution Time
+- Feature Adoption Rates
+
+### Business Metrics
+- Player Acquisition Cost
+- Revenue per Player (if monetized)
+- Market Expansion Opportunities
+- Community Growth
+
+---
+
+## Risk Mitigation
+
+### Technical Risks
+- **Scalability:** Implement horizontal scaling from day one
+- **Data Persistence:** Regular backups and disaster recovery
+- **Security:** Input validation, rate limiting, encryption
+- **Performance:** Optimize for 100+ concurrent players
+
+### Game Design Risks
+- **Complexity:** Keep core mechanics simple while allowing depth
+- **Balance:** Regular playtesting and balance adjustments
+- **Toxicity:** Strong moderation tools and community guidelines
+- **Retention:** Regular content updates and events
+
+---
+
+## Team & Resources
+
+### Development Team
+- **Frontend Developer:** UI/UX implementation and responsive design
+- **Backend Developer:** Game logic, database design, real-time features
+- **Full-Stack Developer:** Integration, deployment, DevOps
+- **Game Designer:** Balance, mechanics, player experience
+
+### Required Resources
+- **Development Environment:** Git, Docker, cloud hosting
+- **Testing:** Staging environment, automated testing suite
+- **Monitoring:** Error tracking, performance monitoring, analytics
+- **Community:** Discord server, documentation, player feedback systems
+
+---
+
+## Next Steps
+
+### Phase 1 Completion (95% → 100%) - Final Week
+1. **Complete Multiplayer Persistence:**
+   - User registration & authentication endpoints
+   - Gang role assignment system (Don, Underboss, Soldier, Civilian)
+   - PostgreSQL connection setup and testing
+
+2. **Test Integration:**
+   - Database schema validation with migrations
+   - Multi-provider AI service testing
+   - Socket.IO room persistence
+
+### Phase 2 Preparation (Ready to Begin)
+1. **Begin Phase 2:** Implement player progression & stats system
+2. **Testing:** Regular playtesting with small player groups
+3. **AI Content Testing:** Crime story and NPC dialogue generation
+4. **Iteration:** Use player feedback to refine mechanics and UI
+5. **Scaling:** Prepare infrastructure for growing player base
+
+### Technical Foundations Established ✅
+- **Database:** Full TypeORM implementation with 10 entities
+- **AI Integration:** Multi-provider LLM service with cost-aware routing
+- **Real-time Infrastructure:** Socket.IO ready for persistent gaming
+
+---
+
+*This roadmap is a living document that will be updated based on development progress, player feedback, and technical requirements. All timelines are estimates and may shift based on complexity and unforeseen challenges.*
