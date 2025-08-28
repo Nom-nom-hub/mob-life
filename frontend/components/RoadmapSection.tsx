@@ -12,21 +12,28 @@ export default function RoadmapSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="bg-card/60 backdrop-blur-md p-6 rounded-xl border border-border/50">
-            <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-4">🏗️</div>
-            <h3 className="font-bold mb-2 text-primary">Phase 1: Foundation & Core Multiplayer</h3>
-            <p className="text-sm text-muted mb-3"><strong>Goal:</strong> Build the multiplayer infrastructure and basic onboarding.</p>
+          <div className="bg-card/60 backdrop-blur-md p-6 rounded-xl border border-border/50 relative">
+            <div className="absolute top-3 right-3 bg-green-500/20 text-green-400 text-xs px-2 py-1 rounded-full font-medium">
+              🔥 LATEST UPDATE
+            </div>
+            <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-4">🎯</div>
+            <h3 className="font-bold mb-2 text-green-400">Phase 1: Foundation & Core Multiplayer</h3>
+            <p className="text-sm text-muted mb-3"><strong>Goal:</strong> Complete multiplayer infrastructure with AI integration and persistent gameplay.</p>
             <ul className="text-xs text-muted space-y-1 mb-4">
-              <li>• ✅ Next.js + TypeScript setup</li>
+              <li>• ✅ Next.js + TypeScript setup (frontend)</li>
               <li>• ✅ Landing page & components</li>
-              <li>• 🔄 Game room creation/joining (6–10 players)</li>
-              <li>• 🔄 Socket.IO real-time connection</li>
-              <li>• ⏳ Player registration & profiles</li>
+              <li>• ✅ <strong>TypeORM database schema</strong> (10 entities)</li>
+              <li>• ✅ <strong>Multi-provider AI service</strong> (Ollama/Gemini/OpenAI)</li>
+              <li>• ✅ <strong>Socket.IO integration</strong> (frontend + backend)</li>
+              <li>• ✅ Game room creation/joining (6–10 players)</li>
+              <li>• ✅ Real-time multiplayer UI foundation</li>
+              <li>• 🔄 Player registration & profiles (database ready)</li>
+              <li>• 🔄 Basic roles & gang assignment (schema complete)</li>
             </ul>
             <div className="w-full bg-border rounded-full h-2 mb-2">
-              <div className="bg-primary h-2 rounded-full w-3/4"></div>
+              <div className="bg-green-400 h-2 rounded-full w-[95%]"></div>
             </div>
-            <span className="text-xs text-primary">Priority: 10/10 • 0–2 weeks</span>
+            <span className="text-xs text-green-400 font-semibold">Priority: 10/10 • <span className="text-green-500">95% Complete</span> • Major Update: AI + TypeORM Integrated</span>
           </div>
 
           <div className="bg-card/60 backdrop-blur-md p-6 rounded-xl border border-border/50">
@@ -97,21 +104,25 @@ export default function RoadmapSection() {
             <span className="text-xs text-secondary">Priority: 9/10 • 5–8 weeks</span>
           </div>
 
-          <div className="bg-card/60 backdrop-blur-md p-6 rounded-xl border border-border/50">
-            <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center mb-4">📜</div>
-            <h3 className="font-bold mb-2 text-accent">Phase 6: Missions & Events</h3>
-            <p className="text-sm text-muted mb-3"><strong>Goal:</strong> Add depth with dynamic content and PvE.</p>
+          <div className="bg-card/60 backdrop-blur-md p-6 rounded-xl border border-purple-500/30 relative">
+            <div className="absolute top-3 right-3 bg-purple-500/20 text-purple-400 text-xs px-2 py-1 rounded-full font-medium">
+              🤖 AI-ENHANCED
+            </div>
+            <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mb-4">🧠</div>
+            <h3 className="font-bold mb-2 text-purple-400">Phase 6: Missions & Events + AI</h3>
+            <p className="text-sm text-muted mb-3"><strong>Goal:</strong> Add depth with AI-generated dynamic content and immersive PvE.</p>
             <ul className="text-xs text-muted space-y-1 mb-4">
-              <li>• ⏳ Story-driven missions</li>
-              <li>• ⏳ Dynamic city events</li>
-              <li>• ⏳ NPC gangs with AI</li>
-              <li>• ⏳ Seasonal/timed events</li>
-              <li>• ⏳ Progression rewards</li>
+              <li>• ⏳ <strong>AI-generated crime stories</strong> (unique per player)</li>
+              <li>• ⏳ <strong>Personality-driven NPCs</strong> with contextual dialogue</li>
+              <li>• ⏳ Story-driven missions with branching narratives</li>
+              <li>• ⏳ Dynamic city events (ML-predicted based on player actions)</li>
+              <li>• ⏳ NPC gangs with adaptive AI behaviors</li>
+              <li>• ⏳ Seasonal/timed events with procedural content</li>
             </ul>
             <div className="w-full bg-border rounded-full h-2 mb-2">
-              <div className="bg-accent h-2 rounded-full w-0"></div>
+              <div className="bg-purple-400 h-2 rounded-full w-[30%]"></div>
             </div>
-            <span className="text-xs text-accent">Priority: 7/10 • 6–10 weeks</span>
+            <span className="text-xs text-purple-400">Priority: 9/10 • Unique AI-Driven Content • Multi-Provider Support (Ollama/Gemini/OpenAI)</span>
           </div>
 
           <div className="bg-card/60 backdrop-blur-md p-6 rounded-xl border border-border/50">
