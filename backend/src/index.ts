@@ -24,8 +24,11 @@ app.get('/health', (req, res) => {
 
 // AI endpoints for dynamic content
 app.post('/api/ai/generate-crime', async (req, res) => {
+    const { playerName, action } = req.body;
+    if (!playerName || !action) {
+        return res.status(400).json({ error: 'Missing required fields: playerName and action are required.' });
+    }
     try {
-        const { playerName, action } = req.body;
         const response = await aiService.generateCrimeStory(action, playerName);
         res.json({ response });
     } catch (error) {
