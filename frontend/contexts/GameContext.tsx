@@ -122,9 +122,13 @@ function gameReducer(state: GameState, action: GameAction): GameState {
       };
 
     case 'PLAYER_JOINED':
+      // Prevent duplicate players by checking if player ID already exists
+      const playerExists = state.players.some(player => player.id === action.payload.id);
       return {
         ...state,
-        players: [...state.players, action.payload],
+        players: playerExists
+          ? state.players
+          : [...state.players, action.payload],
       };
 
     case 'PLAYER_LEFT':

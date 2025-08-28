@@ -17,7 +17,7 @@
 ### Phase 1: Foundation & Core Multiplayer (0–2 weeks)
 **Goal:** Build the multiplayer infrastructure and basic onboarding.
 
-[![Phase 1](https://img.shields.io/badge/Phase_1-95%25_Complete-gre)</color>)](ROADMAP.md#phase-1-foundation--core-multiplayer-0-2-weeks)
+[![Phase 1](https://img.shields.io/badge/Phase_1-95%25_Complete-green)](ROADMAP.md#phase-1-foundation--core-multiplayer-0-2-weeks)
 [![Priority](https://img.shields.io/badge/Priority-10/10-red)](ROADMAP.md#phase-1-foundation--core-multiplayer-0-2-weeks)
 [![Timeline](https://img.shields.io/badge/Timeline-0–2_weeks-blue)](ROADMAP.md#phase-1-foundation--core-multiplayer-0-2-weeks)
 
@@ -310,4 +310,4 @@
 
 ---
 
-*This roadmap is living document that will be updated based on development progress, player feedback, and technical requirements. All timelines are estimates and may shift based on complexity and unforeseen challenges.*
+*This roadmap is a living document that will be updated based on development progress, player feedback, and technical requirements. All timelines are estimates and may shift based on complexity and unforeseen challenges.*

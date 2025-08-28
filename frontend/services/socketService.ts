@@ -132,15 +132,14 @@ class SocketService {
   async createGame(userId: string, username: string): Promise<string> {
     await this.ensureConnected();
     return new Promise((resolve, reject) => {
-      const gameCode = this.generateGameCode();
+      // Game code is generated on backend to prevent collisions
+      this.socket!.emit('createGame', { userId, username });
 
-      this.socket!.emit('createGame', { userId, username, gameCode });
-
-      this.socket!.once('gameCreated', (data: { gameCode: string }) => {
+      this.socket!.once('gameCreated', (data: { gameCode: string; message?: string }) => {
         resolve(data.gameCode);
       });
 
-      this.socket!.once('gameCreationFailed', (error: { message: string }) => {
+      this.socket!.once('gameCreationError', (error: { message: string }) => {
         reject(new Error(error.message));
       });
 
@@ -173,10 +172,10 @@ class SocketService {
   }
 
   // Chat actions
-  sendMessage(gameRoomId: string, message: string, userId: string, username: string): void {
+  sendMessage(gameCode: string, message: string, userId: string, username: string): void {
     if (this.socket?.connected) {
-      this.socket.emit('sendMessage', {
-        gameRoomId,
+      this.socket.emit('chatMessage', {
+        gameCode,
         message,
         userId,
         username,
@@ -198,15 +197,6 @@ class SocketService {
     }
   }
 
-  // Utility methods
-  private generateGameCode(): string {
-    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-    let result = '';
-    for (let i = 0; i < 6; i++) {
-      result += chars.charAt(Math.floor(Math.random() * chars.length));
-    }
-    return result;
-  }
 
   private async ensureConnected(): Promise<void> {
     if (!this.socket?.connected) {
