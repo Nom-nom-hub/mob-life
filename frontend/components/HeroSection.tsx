@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function HeroSection() {
   const [isHovered, setIsHovered] = useState(false);
@@ -54,17 +55,19 @@ export default function HeroSection() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-          <button
-            className="group px-10 py-5 btn-primary text-background rounded-xl text-xl font-bold transition-all duration-300 transform hover:scale-110 shadow-2xl"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            <span className="flex items-center space-x-3">
-              <span>{isHovered ? '⚔️' : '🎮'}</span>
-              <span>{isHovered ? 'START YOUR LEGEND' : 'CREATE CHARACTER'}</span>
-              <span className="group-hover:translate-x-1 transition-transform">→</span>
-            </span>
-          </button>
+          <Link href="/play">
+            <button
+              className="group px-10 py-5 btn-primary text-background rounded-xl text-xl font-bold transition-all duration-300 transform hover:scale-110 shadow-2xl"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              <span className="flex items-center space-x-3">
+                <span>{isHovered ? '♠️' : '🎮'}</span>
+                <span>{isHovered ? 'ENTER THE GAME' : 'ENTER THE GAME'}</span>
+                <span className="group-hover:translate-x-1 transition-transform">→</span>
+              </span>
+            </button>
+          </Link>
           <button className="px-10 py-5 border-2 border-border hover:bg-card/50 text-foreground rounded-xl text-xl font-semibold transition-all duration-300 hover:scale-105 backdrop-blur-sm">
             View World Stats
           </button>
